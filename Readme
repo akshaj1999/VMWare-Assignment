@@ -1,0 +1,7 @@
+We can do the multiplication concurrently by running a thread for numerator multiplication and a different thread for multiplication of denominator.
+
+After finding the answer numerator and denominator we can use a thread to reduce to its simplest form.
+
+So, if we run the code normally it take 3 unit of time, 1 for numerator multiplication, 1 for denominator multiplication and 1 for reducing to simplest form, but if we use the above concurrent
+method it would take 2 unit of time we can multiply numerator and denominator concurrently as they are independent of each other so it would 1 unit of time and 1 unit for reducing to simplest
+form
